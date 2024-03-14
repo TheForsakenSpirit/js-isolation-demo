@@ -1,0 +1,18 @@
+{
+  "name": "test-isolate",
+  "version": "1.0.0",
+  "description": "isolated-vm-playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-node-snapshot index.js",
+    "prof": "node --prof --no-node-snapshot index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "isolated-vm": "^4.7.2"
+  },
+  "type": "module"
+}

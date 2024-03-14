@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: bench
+spec:
+  template:
+    spec:
+      containers:
+      - name: bench
+        image: ""
+        command: ["npm",  "run", "start"]
+      restartPolicy: Never
+  backoffLimit: 1
